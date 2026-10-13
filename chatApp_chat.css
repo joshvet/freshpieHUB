@@ -1,10 +1,11 @@
 :root {
     --bg: #f0f2f5;
     --panel: #ffffff;
+    --panel2: #53035c;
     --text: #1c1e21;
     --muted: #65676b;
     --border: #e4e6eb;
-    --accent: #2563eb;
+    /* --accent: #d50de6; */
     --accent-text: #ffffff;
     --mine: #2563eb;
     --mine-text: #ffffff;
@@ -14,12 +15,12 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg: #121315;
-        --panel: #1c1d20;
+        --bg: #1a0324;
+        --panel: #380558;
         --text: #e6e7ea;
         --muted: #9a9da3;
-        --border: #2c2e33;
-        --accent: #3b82f6;
+        --border: #3a0345;
+        --accent: #8c039c;
         --mine: #2563eb;
         --theirs: #2a2c31;
         --theirs-text: #e6e7ea;
@@ -31,10 +32,25 @@
 }
 
 body {
-    margin: 0;
+    margin: 40px 60px 0 60px;
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
     background: var(--bg);
     color: var(--text);
+}
+
+#head-roof {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#Chat {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Knewave, Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Full-height chat column, centered on wide screens */
@@ -149,19 +165,21 @@ body {
     display: flex;
     gap: 10px;
     padding: 12px 14px;
-    border-top: 1px solid var(--border);
-    background: var(--panel);
+    border-top: 0px solid var(--border);
+    background: var(--panel2);
+    border-radius: 67px;
 }
 
 #msg-input {
     flex: 1;
     padding: 11px 16px;
-    border: 1px solid var(--border);
+    border: 0px solid var(--border);
     border-radius: 999px;
-    background: var(--bg);
+    background: var(--panel2);
     color: var(--text);
     font: inherit;
     outline: none;
+    padding-left: 30px;
 }
 
 #msg-input:focus {
@@ -175,6 +193,8 @@ body {
     background: var(--accent);
     color: var(--accent-text);
     font: inherit;
+    font-size: 13px;
+    margin-right: 6px;
     font-weight: 600;
     cursor: pointer;
 }
