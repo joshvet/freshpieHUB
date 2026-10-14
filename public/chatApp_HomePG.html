@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chat with a friend</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chatApp_chat.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="head-roof">
+        <span id="Chat">Lets Chat...</span>
+    </div>
+
+    <!-- Nav bar Contains Chats side and Profile Side  -->
+    <div></div>
+
+    <span id="whoami"></span> <button id="logout">Log out</button>
+
+    <div id="messages" style="height:60vh; overflow-y:auto;"></div>
+
+    <form id="chat-form">
+        <input id="msg-input" maxlength="500" placeholder="Type a message…" autocomplete="off" required>
+        <button type="submit">Send</button>
+    </form>
+
+    <script type="module" src="home.js"></script>
+</body>
+
+</html>
