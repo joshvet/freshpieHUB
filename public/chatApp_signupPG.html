@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freshpieHUB | Sign up</title>
+    <link rel="stylesheet" href="chatApp_home.css">
+</head>
+
+<body>
+    <!-- This is my SignupPage -->
+    <main class="card">
+        <div class="card-header">
+            <span class="title-join">Join freshpieHUB</span>
+            <p class="subtitle">Sign up to get started. It only takes a minute.</p>
+        </div>
+
+        <form id="signup-form">
+            <div class="field">
+                <!-- <label for="name">Full name</label> -->
+                <input type="text" id="name" name="name" placeholder="Enter your username.." required>
+            </div>
+
+            <div class="field">
+                <!-- <label for="phonenumber">Phone number</label> -->
+                <input type="text" id="phonenumber" name="phonenumber" placeholder="Enter your phone number.." required>
+            </div>
+
+            <div class="field">
+                <!-- <label for="email">Email</label> -->
+                <input type="email" id="email" name="email" placeholder="Enter your email.." required>
+            </div>
+
+            <div class="field">
+                <!-- <label for="password">Password</label> -->
+                <input type="password" id="password" name="password" placeholder="Enter your password.." minlength="6"
+                    required>
+            </div>
+
+            <div class="field">
+                <!-- <label for="confirm">Confirm password</label> -->
+                <input type="password" id="confirm" name="confirm" placeholder="Re-enter your password" minlength="6"
+                    required>
+            </div>
+
+            <label class="terms">
+                <input type="checkbox" name="terms" required> I agree to the <a href="#">Terms of Service</a>
+            </label>
+
+            <p id="error" style="color:#dc2626; min-height:1.2em;"></p>
+
+            <button type="submit" id="submit-btn" class="btn">Sign up</button>
+        </form>
+
+        <p class="footer">Already have an account? <a href="index.html">Sign in</a></p>
+    </main>
+    <script type="module" src="chatApp_signup.js"></script>
+</body>
+
+</html>
