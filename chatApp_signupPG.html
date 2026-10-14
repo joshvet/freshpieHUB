@@ -4,36 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>chatApp Signup</title>
+    <title>freshpieHUB | Sign up</title>
     <link rel="stylesheet" href="chatApp_home.css">
 </head>
 
 <body>
     <!-- This is my SignupPage -->
     <main class="card">
-        <h1>Create account</h1>
-        <p class="subtitle">Sign up to get started. It only takes a minute.</p>
+        <div class="card-header">
+            <span class="title-join">Join freshpieHUB</span>
+            <p class="subtitle">Sign up to get started. It only takes a minute.</p>
+        </div>
 
         <form id="signup-form">
             <div class="field">
-                <label for="name">Full name</label>
-                <input type="text" id="name" name="name" placeholder="Your name" required>
+                <!-- <label for="name">Full name</label> -->
+                <input type="text" id="name" name="name" placeholder="Enter your username.." required>
             </div>
 
             <div class="field">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                <!-- <label for="phonenumber">Phone number</label> -->
+                <input type="text" id="phonenumber" name="phonenumber" placeholder="Enter your phone number.." required>
             </div>
 
             <div class="field">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="At least 8 characters" minlength="8"
+                <!-- <label for="email">Email</label> -->
+                <input type="email" id="email" name="email" placeholder="Enter your email.." required>
+            </div>
+
+            <div class="field">
+                <!-- <label for="password">Password</label> -->
+                <input type="password" id="password" name="password" placeholder="Enter your password.." minlength="6"
                     required>
             </div>
 
             <div class="field">
-                <label for="confirm">Confirm password</label>
-                <input type="password" id="confirm" name="confirm" placeholder="Re-enter your password" minlength="8"
+                <!-- <label for="confirm">Confirm password</label> -->
+                <input type="password" id="confirm" name="confirm" placeholder="Re-enter your password" minlength="6"
                     required>
             </div>
 

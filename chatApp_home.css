@@ -1,3 +1,8 @@
+:root {
+    --bg-input: #f8f6f6;
+    --bg-inputfx: #eeebeb;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,24 +20,35 @@ body {
     padding: 16px;
 }
 
+.card-header {
+    margin-bottom: 17px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
 .card {
     width: 100%;
     max-width: 380px;
     background: #ffffff;
-    padding: 32px;
+    padding: 40px 40px 40px 40px;
     border-radius: 12px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
-h1 {
-    font-size: 1.5rem;
-    margin-bottom: 4px;
+.title-join {
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: 700;
 }
 
 .subtitle {
     color: #6b7280;
-    font-size: 0.95rem;
-    margin-bottom: 24px;
+    font-size: 12px;
+    margin-bottom: 15px;
+    /* margin-top: px; */
+    text-align: center;
 }
 
 .field {
@@ -41,24 +57,25 @@ h1 {
 
 label {
     display: block;
-    font-size: 0.9rem;
+    font-size: 14px;
     font-weight: 500;
     margin-bottom: 6px;
 }
 
+input[type="text"],
 input[type="email"],
 input[type="password"] {
     width: 100%;
-    padding: 10px 12px;
-    border: 1px solid #d1d5db;
-    border-radius: 8px;
-    font-size: 1rem;
+    padding: 17px 20px;
+    border: 0px;
+    border-radius: 15px;
+    font-size: 12px;
+    background-color: var(--bg-input);
 }
 
 input:focus {
     outline: none;
-    border-color: #2563eb;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+    background-color: var(--bg-inputfx);
 }
 
 .row {
@@ -92,10 +109,11 @@ a:hover {
     background: #2563eb;
     color: #ffffff;
     border: none;
-    border-radius: 8px;
-    font-size: 1rem;
+    border-radius: 15px;
+    font-size: 12px;
     font-weight: 500;
     cursor: pointer;
+    padding: 17px 20px;
 }
 
 .btn:hover {
@@ -104,24 +122,24 @@ a:hover {
 
 .footer {
     text-align: center;
-    margin-top: 20px;
-    font-size: 0.9rem;
+    margin-top: 10px;
+    font-size: 12px;
     color: #6b7280;
 }
 
-input[type="text"] {
+/* input[type="text"] {
     width: 100%;
     padding: 10px 12px;
     border: 1px solid #d1d5db;
     border-radius: 8px;
     font-size: 1rem;
-}
+} */
 
 .terms {
     display: flex;
     align-items: center;
     gap: 6px;
-    font-size: 0.9rem;
-    font-weight: 400;
-    margin-bottom: 20px;
+    color: #313336;
+    font-size: 12px;
+    margin-bottom: 2px;
 }
